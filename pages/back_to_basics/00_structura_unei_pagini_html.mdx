@@ -1,0 +1,69 @@
+# Structura de Bază a unei Pagini Web HTML
+
+HTML (HyperText Markup Language) este limbajul de bază pentru crearea paginilor web. Următoarea este structura standard a unei pagini HTML:
+
+## Doctype Declaration
+
+```html copy
+<!DOCTYPE html>
+```
+Acesta este declarația de tip (doctype). Ea informează browserul că documentul este o pagină HTML5.
+
+## Elementul `<html>`
+
+```html copy
+<html lang="en">
+</html>
+```
+Elementul `<html>` înconjoară întregul conținut al paginii. Atributul `lang` specifică limba principală a documentului, `en` pentru engleză.
+
+## Elementul `<head>`
+
+```html copy
+<head>
+    <title>Titlul Paginii</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Descriere scurtă">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="author" content="Numele Autorului">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+</head>
+```
+Elementul `<head>` conține metadate despre document, cum ar fi titlul paginii, setările charset-ului, descrierea paginii, cuvintele cheie, autorul, linkuri către fișiere CSS și scripturi JavaScript.
+
+## Elementul `<body>`
+
+```html copy
+<body>
+    <h1>Acesta este un Titlu Principal</h1>
+    <p>Acesta este un paragraf standard.</p>
+    <img src="imagine.jpg" alt="Descriere imagine">
+    <a href="http://www.exemplu.com">Un link către un alt site web</a>
+</body>
+```
+Elementul `<body>` conține conținutul vizibil al paginii web, cum ar fi text, imagini și linkuri.
+
+## Exemplu Complet
+
+```html copy
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Exemplu Pagină Web</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="O scurtă descriere a paginii">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="author" content="Nume Autor">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <h1>Titlu Principal</h1>
+    <p>Acesta este un paragraf exemplificator.</p>
+    <img src="imagine.jpg" alt="Descriere imagine">
+    <a href="http://www.exemplu.com">Link către un alt site web</a>
+</body>
+</html>
+```
+Acest exemplu reprezintă o structură de bază pentru o pagină HTML. Fiecare secțiune este esențială pentru crearea unui document HTML bine structurat și ușor de citit.
