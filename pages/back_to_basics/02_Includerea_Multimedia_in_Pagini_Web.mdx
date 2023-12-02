@@ -1,0 +1,70 @@
+# Includerea Multimedia în Paginile Web
+
+Această lecție se concentrează pe integrarea elementelor multimedia - imagini, videoclipuri și audio - în paginile web HTML.
+
+## Adăugarea Imaginilor
+
+### Utilizarea Tag-ului `<img>`
+
+```html copy
+<img src="calea_catre_imagine.jpg" alt="Descriere alternativă">
+```
+
+- `src`: Specifică sursa imaginii.
+- `alt`: Descriere alternativă a imaginii, importantă pentru accesibilitate și SEO.
+
+### Setarea Dimensiunilor
+
+```html copy
+<img src="imagine.jpg" alt="Descriere" width="500" height="600">
+```
+
+- `width` și `height` pot fi folosite pentru a controla dimensiunile imaginii.
+
+## Incorporarea Videoclipurilor
+
+### Utilizarea Tag-ului `<video>`
+
+```html copy
+<video width="320" height="240" controls>
+    <source src="film.mp4" type="video/mp4">
+    <source src="film.ogg" type="video/ogg">
+    Videoclipul nu poate fi redat.
+</video>
+```
+
+- Videoclipurile pot avea mai multe formate pentru compatibilitate.
+- Atributul `controls` adaugă controalele de redare (play, pause, etc.).
+- Textul din interiorul `<video>` apare doar dacă browserul nu suportă tag-ul.
+
+## Adăugarea Conținutului Audio
+
+### Utilizarea Tag-ului `<audio>`
+
+```html copy
+<audio controls>
+    <source src="audio.mp3" type="audio/mpeg">
+    <source src="audio.ogg" type="audio/ogg">
+    Conținutul audio nu poate fi redat.
+</audio>
+```
+
+- Similar cu `<video>`, `<audio>` poate avea mai multe formate.
+- Atributul `controls` este folosit pentru a adăuga controale de redare.
+
+## Iframes pentru Conținut Extern
+
+### Incorporarea unui Iframe
+
+```html copy
+<iframe src="http://www.exemplu.com" width="800" height="600">
+    Text afișat dacă iframes nu sunt suportate.
+</iframe>
+```
+
+- `<iframe>` este folosit pentru a încorpora o altă pagină web în documentul actual.
+- `width` și `height` controlează dimensiunea iframe-ului.
+
+## Concluzie
+
+Includerea elementelor multimedia într-o pagină web îmbunătățește experiența vizuală și interactivă a utilizatorilor. Prin utilizarea corespunzătoare a tag-urilor `<img>`, `<video>`, `<audio>` și `<iframe>`, puteți crea pagini web mai bogate și mai atractive.
