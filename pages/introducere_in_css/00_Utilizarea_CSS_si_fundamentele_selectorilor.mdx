@@ -1,0 +1,91 @@
+# Legarea CSS cu HTML și Fundamentele Selectorilor
+
+CSS (Cascading Style Sheets) este limbajul folosit pentru stilizarea paginilor web. El definește cum sunt prezentate elementele HTML, influențând aspectul vizual, de la fonturi și culori până la poziționarea elementelor.
+
+## Cum se Leagă CSS de HTML
+
+Există două moduri principale prin care CSS poate fi aplicat documentelor HTML:
+
+### 1. Inline CSS
+
+Stilul este aplicat direct elementelor HTML folosind atributul `style`. Acesta modifică stilul doar pentru elementul specific.
+
+```html copy
+<p style="color: blue; font-size: 20px;">Acest text este albastru și mare.</p>
+```
+
+Aici, textul din paragraf va fi albastru și va avea o dimensiune a fontului de 20px. Această metodă este utilă pentru modificări rapide, dar nu este eficientă pentru stilizarea repetitivă a mai multor elemente.
+
+### 2. CSS Extern
+
+CSS-ul este scris într-un fișier separat `.css`, care este apoi legat de documentul HTML prin elementul `<link>`.
+
+```html copy
+<link rel="stylesheet" href="styles.css">
+```
+
+```css copy
+/* În fișierul styles.css */
+p {
+    color: blue;
+    font-size: 20px;
+}
+```
+
+Acest exemplu arată cum toate paragrafele din documentul HTML vor avea textul albastru și o dimensiune a fontului de 20px. Această metodă este mai curată și mai eficientă pentru stilizarea a multiple elemente.
+
+## Fundamentele Selectorilor CSS
+
+Selectorii CSS sunt folosiți pentru a alege elementele HTML care vor fi stilizate.
+
+### 1. Selectorul de Tag
+
+Acest selector vizează toate elementele de un anumit tip.
+
+```css copy
+p {
+    color: red;
+}
+```
+
+Aici, toate elementele `<p>` din document vor avea textul colorat în roșu. Este o metodă bună pentru a aplica stiluri generale.
+
+### 2. Selectorul de Clasă
+
+Selectează elementele care au o anumită clasă atribuită.
+
+```css copy
+.red-text {
+    color: red;
+}
+```
+
+Orice element cu clasa `red-text` va avea textul roșu.
+
+```html copy
+<p class="red-text">Acest text este roșu.</p>
+```
+
+Acest exemplu arată cum poți aplica stiluri specifice unor elemente selectate prin clase.
+
+### 3. Selectorul de ID
+
+Vizează un singur element cu un ID unic.
+
+```css copy
+#unique-text {
+    color: green;
+}
+```
+
+Doar elementul cu ID-ul `unique-text` va avea textul verde.
+
+```html copy
+<p id="unique-text">Acest text este verde.</p>
+```
+
+Această metodă este utilizată pentru stilizarea specifică a unui element individual în document.
+
+## Concluzie
+
+Prin această lecție, am văzut cum CSS poate fi legat de documentele HTML și am introdus conceptul de selectori CSS. Înțelegerea acestor principii de bază este esențială pentru începerea procesului de stilizare a paginilor web, permițând crearea de designuri vizual atractive și funcționale.
