@@ -1,0 +1,128 @@
+## Realizarea unui meniu cu link-uri în HTML
+
+### Cerințe:
+- Instalează Visual Studio Code
+- Creează un fișier HTML
+- Adaugă un titlu paginii
+- Folosind `ul` și `li` adaugă un meniu cu 3 link-uri
+    - Folosind `a` adaugă un link către o altă pagină HTML (poate fi chiar pagina curentă)
+    - Folosind `a` adaugă un link către o altă pagină HTML, dar să se deschidă într-o fereastră nouă
+    - Folosind `a` adaugă un link extern către un alt site (un clip de pe YouTube, de exemplu)
+
+- Personalizează cum arată fiecare element folosind CSS
+    - Schimbă culoarea de fundal a paginii
+    - Schimbă culoarea textului din elementele meniului
+
+### Resurse și exemplu de cod:
+#### 1. Instalează Visual Studio Code
+Accesează [acest link](https://code.visualstudio.com/download) și instalează Visual Studio Code. Se găsesc numeroase tutoriale pe YouTube cum să faci asta.
+#### 2. Creează un fișier HTML
+Aici este un tutorial pe YouTube despre introducerea în HTML și cum să creezi prima pagină HTML folosind VS Code.
+
+Puteti sări peste conceptele deja cunoscute.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/k-EAy7-uKj4?si=I7GqpMEFzRJWWGkj" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+#### 3. Adaugă un titlu paginii
+Pentru a adăuga un titlu paginii, folosim tag-ul `title` în interiorul tag-ului `head`.
+
+Acest titlu va apărea în bara de titlu a browser-ului. De asemenea, va apărea și în rezultatele căutărilor Google (atunci când site-ul este publicat)
+
+```html
+<head>
+    <title>Titlul paginii</title>
+</head>
+```
+
+#### 4. Folosind `ul` și `li` adaugă un meniu cu 3 link-uri
+
+Tag-ul `ul` este folosit pentru a crea o listă neordonată (unordered list). Tag-ul `li` este folosit pentru a crea un element din listă (list item).
+
+```html
+<ul>
+    <li>Element 1</li>
+    <li>Element 2</li>
+    <li>Element 3</li>
+</ul>
+```
+
+#### 4.1 Folosind `a` adaugă un link către o altă pagină HTML (poate fi chiar pagina curentă)
+
+Tag-ul `a` este folosit pentru a crea un link. Acesta are un atribut `href` care specifică adresa către care se face link-ul.
+
+```html
+<a href="index.html">Pagina principală</a>
+```
+
+#### 4.2 Folosind `a` adaugă un link către o altă pagină HTML, dar să se deschidă într-o fereastră nouă
+
+Pentru a deschide link-ul într-o fereastră nouă, folosim atributul `target` cu valoarea `_blank`.
+
+```html
+<a href="index.html" target="_blank">Pagina principală</a>
+```
+
+#### 4.3 Folosind `a` adaugă un link extern către un alt site (un clip de pe YouTube, de exemplu)
+
+```html
+<a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Un clip de pe YouTube</a>
+```
+
+#### 4.4 Punem fiecare link în propriul element `li`
+
+```html
+<ul>
+    <li><a href="index.html">Pagina principală</a></li>
+    <li><a href="index.html" target="_blank">Pagina principală (în altă fereastră)</a></li>
+    <li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Un clip de pe YouTube</a></li>
+</ul>
+```
+
+#### 5. Personalizează cum arată fiecare element folosind CSS
+
+Vizitează [acest link](/introducere_in_css/00_Utilizarea_CSS_si_fundamentele_selectorilor.mdx) pentru a învăța despre cum adaugi CSS într-un fișier HTML.
+
+
+#### 5.1 Schimbă culoarea de fundal a paginii
+
+```css
+body {
+    background-color: red;
+}
+```
+
+#### 5.2 Schimbă culoarea link-urilor din elementele meniului
+
+```css
+a {
+    color: blue;
+}
+```
+
+### Rezultat final
+
+```html
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <title>Titlul paginii</title>
+    <style>
+        body {
+            background-color: pink;
+        }
+
+        a {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li><a href="index.html">Pagina principală</a></li>
+        <li><a href="index.html" target="_blank">Pagina principală (în altă fereastră)</a></li>
+        <li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Un clip de pe YouTube</a></li>
+    </ul>
+</body>
+</html>
+```

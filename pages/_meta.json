@@ -4,6 +4,9 @@
     "title": "Despre",
     "type": "page"
   },
+  "teme":{
+    "title": "0. Teme"
+  },
   "back_to_basics": {
     "title": "1. Back to basics"
   },
